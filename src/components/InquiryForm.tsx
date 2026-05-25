@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Sparkles, Send, CheckCircle, HelpCircle } from 'lucide-react';
+import { Sparkles, Send, CheckCircle } from 'lucide-react';
 import { showSuccess } from '@/utils/toast';
 
 interface InquiryFormProps {
@@ -13,7 +13,7 @@ export default function InquiryForm({ prefilledMurti = "" }: InquiryFormProps) {
     name: "",
     phone: "",
     email: "",
-    murtiType: prefilledMurti || "Eco-Friendly Clay",
+    murtiType: prefilledMurti || "Eco-Friendly Clay Ganesha",
     size: "2 Feet",
     customRequirements: "",
     deliveryOption: "Home Delivery"
@@ -146,13 +146,9 @@ export default function InquiryForm({ prefilledMurti = "" }: InquiryFormProps) {
                       onChange={(e) => setFormData({ ...formData, murtiType: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all text-sm bg-white"
                     >
-                      <option value="Eco-Friendly Clay">Eco-Friendly Clay (Shaddu Mati)</option>
-                      <option value="Dagdusheth Style Ganesha">Dagdusheth Style Ganesha</option>
-                      <option value="Eco-Friendly Lalbaugcha Raja">Eco-Friendly Lalbaugcha Raja</option>
-                      <option value="Serene White Marble Ganesha">Serene White Marble Ganesha</option>
-                      <option value="Bal Ganesha Idol">Bal Ganesha Idol</option>
-                      <option value="Siddhivinayak Replica">Siddhivinayak Replica</option>
-                      <option value="Tree Ganesha (With Seeds)">Tree Ganesha (With Seeds)</option>
+                      <option value="Eco-Friendly Clay Ganesha">Eco-Friendly Clay Ganesha</option>
+                      <option value="Traditional Ornate Ganesha">Traditional Ornate Ganesha</option>
+                      <option value="Premium Marble Finish Ganesha">Premium Marble Finish Ganesha</option>
                     </select>
                   </div>
                   <div className="space-y-1.5">
@@ -162,9 +158,9 @@ export default function InquiryForm({ prefilledMurti = "" }: InquiryFormProps) {
                       onChange={(e) => setFormData({ ...formData, size: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all text-sm bg-white"
                     >
-                      <option value="9 Inches to 1 Foot">9 Inches to 1 Foot (Home Temple)</option>
-                      <option value="1.5 Feet">1.5 Feet</option>
+                      <option value="1 Foot to 1.5 Feet">1 Foot to 1.5 Feet</option>
                       <option value="2 Feet">2 Feet (Standard Home)</option>
+                      <option value="2.5 Feet">2.5 Feet</option>
                       <option value="3 Feet">3 Feet</option>
                       <option value="4 Feet+">4 Feet+ (Pandal / Community)</option>
                     </select>

@@ -5,25 +5,25 @@ import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1567591910360-697e50743726?auto=format&fit=crop&w=1920&q=80",
-    tagline: "Divine Craftsmanship & Devotion",
-    title: "Exquisite Ganpati Murtis",
-    description: "Handcrafted with love, devotion, and absolute perfection by master artisans. Bring home the divine presence this festive season.",
-    cta: "Explore Collection"
-  },
-  {
     image: "https://images.unsplash.com/photo-1609137144814-9d998069696d?auto=format&fit=crop&w=1920&q=80",
-    tagline: "100% Eco-Friendly & Pure",
-    title: "Shaddu Mati Clay Murtis",
-    description: "Celebrate responsibly with our completely biodegradable clay idols painted with natural organic colors that dissolve beautifully in water.",
-    cta: "Book Eco-Friendly Murti"
+    tagline: "100% Natural & Biodegradable",
+    title: "Eco-Friendly Clay Ganesha",
+    description: "Crafted with pure Shaddu Mati (river clay) and organic water-soluble colors. Celebrate Ganeshotsav responsibly with home immersion.",
+    cta: "Book Clay Murti"
   },
   {
     image: "https://images.unsplash.com/photo-1630260579111-799969997c90?auto=format&fit=crop&w=1920&q=80",
-    tagline: "Custom Masterpieces",
-    title: "Tailored to Your Devotion",
-    description: "From miniature home shrines to grand community pandals, we customize every detail—from expressions and ornaments to poses.",
-    cta: "Request Custom Design"
+    tagline: "Majestic & Traditional Designs",
+    title: "Traditional Ornate Ganesha",
+    description: "Inspired by the legendary Lalbaugcha Raja and Dagdusheth Halwai. Adorned with intricate hand-painted ornaments and a royal crown.",
+    cta: "Book Ornate Murti"
+  },
+  {
+    image: "https://images.unsplash.com/photo-1567591910360-697e50743726?auto=format&fit=crop&w=1920&q=80",
+    tagline: "Elegant & Everlasting Grace",
+    title: "Premium Marble Finish Ganesha",
+    description: "Exquisite white marble-look finish with subtle gold leaf detailing. Perfect for home temples, offices, and lifelong devotion.",
+    cta: "Book Marble Murti"
   }
 ];
 
@@ -79,7 +79,7 @@ export default function HeroCarousel({ onCtaClick }: HeroCarouselProps) {
               
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-stone-100 tracking-tight leading-none">
                 {slide.title.split(' ').map((word, i) => (
-                  <span key={i} className={word === "Ganpati" || word === "Murtis" || word === "Devotion" ? "text-amber-500 block sm:inline" : ""}>
+                  <span key={i} className={word === "Ganesha" || word === "Ornate" || word === "Clay" || word === "Marble" ? "text-amber-500 block sm:inline" : ""}>
                     {word}{' '}
                   </span>
                 ))}
@@ -100,7 +100,7 @@ export default function HeroCarousel({ onCtaClick }: HeroCarouselProps) {
                   onClick={() => onCtaClick('gallery')}
                   className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full border border-white/20 backdrop-blur-sm transition-all duration-300 hover:scale-105"
                 >
-                  View Gallery
+                  View 3 Types
                 </button>
               </div>
             </div>
